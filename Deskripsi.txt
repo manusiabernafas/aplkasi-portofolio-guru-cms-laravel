@@ -1,0 +1,56 @@
+Deskripsi
+Website portofolio pribadi untuk guru lengkap dengan panel admin (CMS), dibangun dengan Laravel 12 dan MySQL. Guru bisa menampilkan profil, riwayat pendidikan dan pengalaman mengajar, karya tulis dan PTK, bahan ajar untuk siswa, prestasi, galeri kegiatan, artikel, dan testimoni, semuanya diisi dari panel admin tanpa menyentuh kode.
+
+Cocok sebagai bukti fisik PKG, pendukung kenaikan pangkat, seleksi guru berprestasi, Guru Penggerak, atau kartu nama digital yang bisa dibagikan ke siswa dan orang tua. Tampilan bersih dan responsif dengan font Plus Jakarta Sans dan Montserrat Bold, enam pilihan warna aksen, data contoh guru Biologi lengkap, dan panduan instalasi XAMPP.
+Cara kerja
+Situs publik terdiri dari beranda, profil, karya dan publikasi, bahan ajar, prestasi, galeri, artikel, dan kontak. Beranda merangkum lama mengajar, jumlah siswa yang dibimbing, kompetensi, karya terbaru, prestasi, artikel, dan testimoni. Halaman profil menampilkan garis waktu pendidikan dan pengalaman, kompetensi per kelompok, daftar pelatihan dengan total JP, serta tombol unduh CV.
+
+Semua konten dikelola dari panel admin di /admin. Ada sepuluh jenis konten (karya, bahan ajar, artikel, prestasi, galeri, testimoni, pendidikan, pengalaman, sertifikat, kompetensi) yang formulirnya dibangun otomatis dari satu berkas definisi, sehingga mudah ditambah. Isi panjang ditulis dengan Markdown dan bisa dipratinjau sebelum disimpan. Gambar disimpan di folder unggahan publik, sedangkan berkas unduhan (PDF, Word, PowerPoint, Excel, ZIP) disimpan di folder privat dan hanya keluar lewat tautan unduh yang sekaligus menghitung jumlah unduhan.
+
+Pengunjung bisa mengirim pesan lewat formulir kontak yang dilindungi honeypot dan batas kiriman; pesan masuk ke kotak pesan admin. Dasbor admin menampilkan total unduhan, pesan belum dibaca, karya dan artikel terpopuler, serta checklist kelengkapan portofolio. Warna aksen, menu yang tampil, judul, dan deskripsi SEO diatur dari halaman Profil & tampilan; situs juga menyediakan sitemap.xml, robots.txt, dan Open Graph untuk pratinjau saat dibagikan.
+Fitur
+Situs portofolio guru: beranda, profil, karya, bahan ajar, prestasi, galeri, artikel, kontak
+Panel admin (CMS) untuk mengisi semua konten tanpa menyentuh kode
+Karya & publikasi: PTK, artikel jurnal, buku, modul ajar, media pembelajaran, best practice
+Halaman detail karya dengan sampul, uraian, tautan luar, dan unduhan berkas
+Bahan ajar untuk siswa dengan filter kelas, pencarian, unduh materi, dan tautan video
+Prestasi guru dan siswa bimbingan dikelompokkan per tahun
+Galeri dengan filter album, lightbox, dan unggah banyak foto sekaligus
+Artikel/blog dengan kategori, jadwal terbit, dan hitungan dibaca
+Profil lengkap: garis waktu pendidikan & pengalaman, kompetensi, pelatihan + total JP
+Unduh CV PDF langsung dari situs
+Editor Markdown dengan tombol pratinjau
+Penghitung unduhan dan dilihat untuk setiap karya, bahan ajar, dan artikel
+Formulir kontak anti-spam (honeypot + batas kiriman) dan kotak pesan admin
+Tombol WhatsApp dan tautan media sosial
+6 pilihan warna aksen dan atur menu yang ditampilkan
+Dasbor: total unduhan, karya & artikel terpopuler, checklist kelengkapan portofolio
+SEO: judul & deskripsi per halaman, Open Graph, sitemap.xml, robots.txt
+Berkas unduhan disimpan di folder privat, gambar dibatasi jenis & ukurannya
+Keamanan: CSRF, batas percobaan login, Markdown aman, header keamanan
+Tampilan responsif, font Plus Jakarta Sans + Montserrat Bold, tanpa CDN
+Data contoh lengkap guru Biologi beserta gambar dan berkas contoh
+Panduan instalasi
+Kebutuhan: PHP 8.2 atau lebih baru (XAMPP 8.2+ / Laragon), MySQL/MariaDB, dan Composer (Laragon sudah menyertakannya).
+
+Ekstrak ZIP lalu pindahkan folder portofolio-guru ke C:\xampp\htdocs\portofolio-guru (atau C:\laragon\www\portofolio-guru).
+
+Nyalakan Apache dan MySQL dari XAMPP Control Panel.
+
+Jalankan setup:
+
+Windows: klik dua kali setup.bat (atau buka Shell di XAMPP Control Panel, masuk ke folder project, lalu ketik setup.bat).
+Linux/macOS: bash setup.sh
+Script ini menjalankan composer install (jika folder vendor belum ada), membuat file .env, kunci aplikasi, database portofolio_guru, tabel, dan data contoh.
+
+Buka http://localhost/portofolio-guru untuk melihat situs.
+
+Buka http://localhost/portofolio-guru/admin lalu masuk dengan username admin dan kata sandi admin123. Segera ganti kata sandi di menu Profil & tampilan.
+
+Ganti nama, foto, kontak, warna, dan CV di Profil & tampilan, lalu ubah atau hapus data contoh di setiap menu.
+
+Tanpa XAMPP: dari folder project jalankan bash setup.sh lalu php artisan serve, buka http://127.0.0.1:8000.
+
+Jika user/password MySQL berbeda, ubah DB_USERNAME dan DB_PASSWORD di file .env lalu jalankan setup lagi.
+
+Untuk hosting: arahkan document root ke folder public/, ubah APP_URL di .env, pastikan APP_ENV=production dan APP_DEBUG=false, serta folder storage/ dan public/uploads/ bisa ditulis.

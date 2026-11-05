@@ -1,0 +1,168 @@
+/* Portofolio Guru — situs publik. Warna aksen diatur dari panel admin (variabel --aksen). */
+@font-face { font-family: "Jakarta"; src: url("../fonts/PlusJakartaSans.woff2") format("woff2"); font-weight: 400 800; font-display: swap; }
+@font-face { font-family: "Montserrat"; src: url("../fonts/Montserrat-latin.woff2") format("woff2"); font-weight: 700 800; font-display: swap; }
+:root { --aksen: #1f5c45; --aksen-soft: #e5efe9; --kertas: #faf7f0; --kertas-2: #f2ede1; --tinta: #1a1d1b; --abu: #5e655f; --garis: #e4ded0; --kuning: #e9b44c; --putih: #fff; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { margin: 0; font-family: "Jakarta", system-ui, sans-serif; font-size: 16px; line-height: 1.65; color: var(--tinta); background: var(--kertas); }
+h1, h2, h3, h4, .judul { font-family: "Montserrat", "Jakarta", sans-serif; font-weight: 800; line-height: 1.15; letter-spacing: -.015em; margin: 0; }
+a { color: var(--aksen); } img { max-width: 100%; display: block; }
+:focus-visible { outline: 3px solid var(--kuning); outline-offset: 3px; }
+.wrap { width: min(1160px, 100% - 40px); margin: 0 auto; }
+.ic { width: 1.1em; height: 1.1em; flex: none; }
+.muted { color: var(--abu); } .kecil { font-size: 14px; }
+
+/* navigasi */
+.nav { position: sticky; top: 0; z-index: 40; background: rgba(250,247,240,.94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--garis); }
+.nav .wrap { display: flex; align-items: center; gap: 24px; height: 72px; }
+.logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--tinta); margin-right: auto; min-width: 0; }
+.logo .mono { width: 42px; height: 42px; border-radius: 12px; background: var(--aksen); color: #fff; display: grid; place-items: center; font-family: "Montserrat"; font-weight: 800; flex: none; }
+.logo b { font-family: "Montserrat"; font-weight: 800; font-size: 16px; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.logo small { color: var(--abu); font-size: 12.5px; display: block; }
+.menu { display: flex; gap: 4px; }
+.menu a { white-space: nowrap; text-decoration: none; color: var(--tinta); font-weight: 600; font-size: 15px; padding: 8px 12px; border-radius: 10px; }
+.menu a:hover { background: var(--kertas-2); } .menu a.on { color: var(--aksen); background: var(--aksen-soft); }
+.tombol-menu { display: none; background: none; border: 1.5px solid var(--garis); border-radius: 12px; width: 44px; height: 44px; cursor: pointer; color: var(--tinta); }
+
+/* tombol */
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 13px 22px; border-radius: 14px; font-weight: 700; text-decoration: none; border: 0; font: inherit; font-weight: 700; cursor: pointer; background: var(--aksen); color: #fff; transition: transform .15s; }
+.btn:hover { transform: translateY(-1px); }
+.btn.garis { background: transparent; color: var(--tinta); border: 2px solid var(--tinta); }
+.btn.kuning { background: var(--kuning); color: var(--tinta); }
+.btn.putih { background: #fff; color: var(--aksen); }
+.btn.kecil { padding: 8px 14px; font-size: 14px; border-radius: 11px; }
+
+/* hero */
+.hero { padding: 64px 0 72px; }
+.hero .wrap { display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: center; }
+.kicker { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--aksen); }
+.kicker::before { content: ""; width: 34px; height: 3px; background: var(--kuning); border-radius: 3px; }
+.hero h1 { font-size: clamp(38px, 5.2vw, 64px); margin: 18px 0 18px; }
+.hero h1 span { color: var(--aksen); }
+.hero .bio { font-size: 18px; color: var(--abu); max-width: 560px; }
+.hero .aksi { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.angka { display: flex; flex-wrap: wrap; gap: 36px; margin-top: 40px; padding-top: 28px; border-top: 1px solid var(--garis); }
+.angka b { font-family: "Montserrat"; font-size: 34px; font-weight: 800; display: block; line-height: 1; color: var(--tinta); }
+.angka span { font-size: 14px; color: var(--abu); font-weight: 600; }
+.foto { position: relative; max-width: 420px; justify-self: center; width: 100%; }
+.foto::before { content: ""; position: absolute; inset: 26px -22px -22px 26px; background: var(--aksen); border-radius: 34px; }
+.foto img, .foto .inisial { position: relative; width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 30px; background: var(--kertas-2); }
+.foto .inisial { display: grid; place-items: center; font-family: "Montserrat"; font-size: 96px; font-weight: 800; color: var(--aksen); }
+.foto .lencana { position: absolute; left: -26px; bottom: 34px; background: #fff; border-radius: 18px; padding: 14px 18px; box-shadow: 0 18px 40px rgba(26,29,27,.12); display: flex; gap: 12px; align-items: center; }
+.foto .lencana .ic { width: 38px; height: 38px; padding: 8px; border-radius: 12px; background: var(--kuning); color: var(--tinta); }
+.foto .lencana b { display: block; font-family: "Montserrat"; font-size: 15px; } .foto .lencana span { font-size: 13px; color: var(--abu); }
+
+/* seksi */
+.seksi { padding: 80px 0; } .seksi.alt { background: #fff; border-top: 1px solid var(--garis); border-bottom: 1px solid var(--garis); }
+.seksi-h { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 18px; margin-bottom: 36px; }
+.seksi-h h2 { font-size: clamp(28px, 3.4vw, 40px); margin-top: 12px; }
+.seksi-h p { margin: 10px 0 0; color: var(--abu); max-width: 560px; }
+.halaman-h { padding: 56px 0 36px; }
+.halaman-h h1 { font-size: clamp(34px, 4.5vw, 52px); margin-top: 14px; }
+.halaman-h p { color: var(--abu); font-size: 18px; max-width: 640px; margin: 12px 0 0; }
+.grid { display: grid; gap: 24px; } .g2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } .g3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } .g4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+/* kartu */
+.kartu { background: #fff; border: 1px solid var(--garis); border-radius: 22px; overflow: hidden; text-decoration: none; color: inherit; display: flex; flex-direction: column; transition: transform .2s, box-shadow .2s; }
+a.kartu:hover { transform: translateY(-4px); box-shadow: 0 22px 44px rgba(26,29,27,.09); }
+.kartu .sampul { aspect-ratio: 16/10; object-fit: cover; width: 100%; background: var(--kertas-2); }
+.kartu .isi { padding: 20px 22px 22px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.kartu h3 { font-size: 19px; }
+.label { display: inline-flex; align-self: flex-start; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; letter-spacing: .03em; padding: 4px 11px; border-radius: 999px; background: var(--aksen-soft); color: var(--aksen); }
+.label.kuning { background: #fbf0d8; color: #8a5d0b; }
+.meta { display: flex; flex-wrap: wrap; gap: 14px; font-size: 13.5px; color: var(--abu); font-weight: 600; margin-top: auto; }
+.meta span { display: inline-flex; align-items: center; gap: 6px; }
+
+/* prestasi */
+.pres { display: flex; gap: 18px; align-items: flex-start; background: #fff; border: 1px solid var(--garis); border-radius: 20px; padding: 20px; }
+.pres .medali { width: 54px; height: 54px; border-radius: 16px; background: var(--kuning); color: var(--tinta); display: grid; place-items: center; flex: none; }
+.pres .medali .ic { width: 26px; height: 26px; }
+.pres h3 { font-size: 17px; } .pres img { width: 92px; height: 92px; object-fit: cover; border-radius: 14px; flex: none; }
+
+/* kompetensi */
+.bar { margin-bottom: 16px; } .bar .nm { display: flex; justify-content: space-between; font-weight: 700; font-size: 15px; margin-bottom: 7px; }
+.bar .jalur { height: 10px; background: var(--kertas-2); border-radius: 99px; overflow: hidden; } .bar .jalur i { display: block; height: 100%; background: var(--aksen); border-radius: 99px; }
+
+/* testimoni */
+.quote { background: #fff; border: 1px solid var(--garis); border-radius: 22px; padding: 70px 28px 28px; position: relative; }
+.quote::before { content: "\201C"; font-family: "Montserrat"; font-size: 84px; line-height: 1; color: var(--kuning); position: absolute; top: 14px; left: 26px; }
+.quote p { margin: 0 0 18px; font-size: 16.5px; } .quote b { font-family: "Montserrat"; display: block; } .quote small { color: var(--abu); }
+
+/* timeline */
+.garis-waktu { border-left: 3px solid var(--garis); padding-left: 28px; display: grid; gap: 26px; }
+.garis-waktu .item { position: relative; }
+.garis-waktu .item::before { content: ""; position: absolute; left: -38px; top: 6px; width: 15px; height: 15px; border-radius: 50%; background: var(--kertas); border: 3px solid var(--aksen); }
+.garis-waktu .th { font-weight: 700; color: var(--aksen); font-size: 14px; }
+.garis-waktu h3 { font-size: 18px; margin: 4px 0; }
+
+/* filter */
+.filter { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 30px; }
+.filter a { text-decoration: none; padding: 8px 16px; border-radius: 999px; border: 1.5px solid var(--garis); color: var(--tinta); font-weight: 600; font-size: 14.5px; background: #fff; }
+.filter a.on { background: var(--aksen); border-color: var(--aksen); color: #fff; }
+
+/* daftar bahan ajar */
+.baris { display: flex; align-items: center; gap: 18px; background: #fff; border: 1px solid var(--garis); border-radius: 18px; padding: 18px 20px; }
+.baris .ikon-b { width: 50px; height: 50px; border-radius: 14px; background: var(--aksen-soft); color: var(--aksen); display: grid; place-items: center; flex: none; }
+.baris .ikon-b .ic { width: 24px; height: 24px; } .baris .teks { flex: 1; min-width: 0; } .baris h3 { font-size: 17px; }
+.baris .tombol { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+
+/* galeri */
+.galeri { columns: 3 280px; column-gap: 18px; }
+.galeri a { display: block; break-inside: avoid; margin-bottom: 18px; border-radius: 18px; overflow: hidden; position: relative; }
+.galeri img { width: 100%; height: auto; transition: transform .3s; } .galeri a:hover img { transform: scale(1.03); }
+.galeri span { position: absolute; left: 12px; bottom: 12px; right: 12px; background: rgba(26,29,27,.78); color: #fff; font-size: 13.5px; font-weight: 600; padding: 7px 12px; border-radius: 10px; }
+dialog.lightbox { border: 0; padding: 0; background: transparent; max-width: min(1100px, 94vw); }
+dialog.lightbox::backdrop { background: rgba(10,12,11,.88); }
+dialog.lightbox img { max-height: 84vh; width: auto; border-radius: 14px; } dialog.lightbox p { color: #fff; text-align: center; font-weight: 600; }
+
+/* artikel */
+.prosa { font-size: 17.5px; line-height: 1.8; max-width: 720px; }
+.prosa h2 { font-size: 26px; margin: 36px 0 12px; } .prosa h3 { font-size: 21px; margin: 28px 0 10px; }
+.prosa p { margin: 0 0 18px; } .prosa ul, .prosa ol { padding-left: 24px; margin: 0 0 18px; } .prosa li { margin-bottom: 6px; }
+.prosa blockquote { margin: 24px 0; padding: 4px 22px; border-left: 4px solid var(--kuning); color: var(--abu); font-style: italic; }
+.prosa img { border-radius: 16px; margin: 20px 0; } .prosa a { font-weight: 600; }
+.prosa table { border-collapse: collapse; width: 100%; margin-bottom: 18px; } .prosa th, .prosa td { border: 1px solid var(--garis); padding: 8px 12px; text-align: left; }
+
+/* form */
+.form label { display: block; font-weight: 700; margin-bottom: 7px; font-size: 15px; }
+.form input, .form textarea, .form select { width: 100%; font: inherit; padding: 13px 15px; border: 1.5px solid var(--garis); border-radius: 13px; background: #fff; color: var(--tinta); }
+.form input:focus, .form textarea:focus { outline: none; border-color: var(--aksen); box-shadow: 0 0 0 4px var(--aksen-soft); }
+.form .f { margin-bottom: 18px; } .form textarea { min-height: 150px; resize: vertical; }
+.galat { color: #b42318; font-size: 14px; font-weight: 600; margin-top: 6px; }
+.alert { padding: 14px 18px; border-radius: 14px; font-weight: 600; margin-bottom: 22px; } .alert.ok { background: #e3f5ea; color: #13703b; } .alert.err { background: #fde8e6; color: #b42318; }
+.hp { position: absolute; left: -9999px; }
+
+/* cta & footer */
+.cta { background: var(--aksen); color: #fff; border-radius: 30px; padding: 54px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; }
+.cta h2 { font-size: clamp(26px, 3.2vw, 38px); color: #fff; max-width: 560px; } .cta p { color: rgba(255,255,255,.85); margin: 10px 0 0; }
+footer { padding: 54px 0 34px; border-top: 1px solid var(--garis); margin-top: 80px; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 30px; justify-content: space-between; align-items: flex-start; }
+.sosmed { display: flex; gap: 10px; } .sosmed a { width: 42px; height: 42px; border-radius: 12px; border: 1.5px solid var(--garis); display: grid; place-items: center; color: var(--tinta); background: #fff; }
+.sosmed a:hover { border-color: var(--aksen); color: var(--aksen); }
+.pagin { display: flex; gap: 8px; justify-content: center; margin-top: 36px; flex-wrap: wrap; }
+.pagin a, .pagin span { padding: 8px 14px; border-radius: 10px; border: 1.5px solid var(--garis); text-decoration: none; color: var(--tinta); font-weight: 600; background: #fff; }
+.pagin .on { background: var(--aksen); color: #fff; border-color: var(--aksen); }
+.kosong { background: #fff; border: 1.5px dashed var(--garis); border-radius: 20px; padding: 40px; text-align: center; color: var(--abu); }
+
+.dua { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 48px; }
+.dua.kiri { grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); } .atas { align-items: start; }
+.g2.lebar { gap: 56px; } .lekat { position: sticky; top: 96px; }
+.lekat .isi { display: flex; flex-direction: column; gap: 10px; } .lekat .btn { justify-content: center; }
+.form.kartu:hover { transform: none; }
+@media (max-width: 1120px) {
+  .menu { position: fixed; inset: 72px 0 auto 0; background: var(--kertas); flex-direction: column; padding: 14px 20px 22px; border-bottom: 1px solid var(--garis); display: none; }
+  .menu.buka { display: flex; } .menu a { padding: 12px 14px; }
+  .tombol-menu { display: grid; place-items: center; }
+}
+@media (max-width: 960px) {
+  .nav .btn.hubungi { display: none; }
+  .dua, .dua.kiri { grid-template-columns: minmax(0, 1fr); gap: 32px; } .lekat { position: static; } .g2.lebar { gap: 40px; }
+  .hero { padding: 36px 0 56px; } .hero .wrap { grid-template-columns: 1fr; gap: 48px; }
+  .foto { max-width: 320px; } .foto .lencana { left: -10px; }
+  .g2, .g3, .g4 { grid-template-columns: minmax(0, 1fr); }
+  .seksi { padding: 56px 0; } .cta { padding: 34px 26px; border-radius: 24px; }
+  .baris { flex-wrap: wrap; } .baris .tombol { width: 100%; justify-content: flex-start; }
+  .angka { gap: 24px; }
+}
+@media (min-width: 640px) and (max-width: 960px) { .g3, .g4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }

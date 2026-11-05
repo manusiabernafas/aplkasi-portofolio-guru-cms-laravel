@@ -1,0 +1,48 @@
+{
+  "profil": {
+    "nama": "Siti Rahmawati, S.Pd., M.Pd.", "jabatan": "Guru", "mapel": "Biologi", "sekolah": "SMA Negeri 1 Cendekia", "nip": "19870412 201101 2 004",
+    "bio_singkat": "Guru Biologi yang percaya setiap siswa bisa jatuh cinta pada sains lewat pengalaman nyata: praktikum, kebun sekolah, dan pertanyaan yang tidak pernah dianggap remeh.",
+    "tentang": "Saya mengajar Biologi sejak 2011 dan saat ini menjadi guru di SMA Negeri 1 Cendekia sekaligus pembina Kelompok Ilmiah Remaja (KIR).\n\nBagi saya kelas yang baik adalah kelas yang **berani bertanya**. Karena itu pembelajaran saya banyak berangkat dari masalah nyata di sekitar sekolah: kualitas air sungai, sampah plastik kantin, sampai keanekaragaman serangga di kebun sekolah.\n\nBeberapa hal yang sedang saya tekuni:\n\n- Pembelajaran berdiferensiasi dan asesmen formatif\n- Pembelajaran berbasis proyek (PjBL) untuk Projek Penguatan Profil Pelajar Pancasila\n- Pemanfaatan media digital sederhana: simulasi, video pendek, dan kuis interaktif\n\nSaya terbuka untuk berbagi praktik baik, menjadi narasumber, maupun berkolaborasi dalam penelitian tindakan kelas.",
+    "tahun_mulai": "2011", "jumlah_siswa": "2400", "email": "siti.rahmawati@contoh.sch.id", "wa": "0812 0000 1234",
+    "alamat": "Jl. Pendidikan No. 1, Kota Cendekia", "instagram": "https://instagram.com/", "youtube": "https://youtube.com/", "linkedin": "https://linkedin.com/",
+    "meta_deskripsi": "Portofolio Siti Rahmawati, guru Biologi SMA Negeri 1 Cendekia: karya, bahan ajar, prestasi, dan artikel pembelajaran."
+  },
+  "karya": [
+    {"judul": "Peningkatan Hasil Belajar Sistem Pencernaan melalui Model Problem Based Learning di Kelas XI", "jenis": "Penelitian Tindakan Kelas", "tahun": 2025, "ringkasan": "PTK dua siklus yang menaikkan ketuntasan belajar dari 58% menjadi 86% dengan masalah nyata seputar pola makan remaja."},
+    {"judul": "Modul Ajar Ekosistem Berbasis Proyek: Mengamati Kebun Sekolah", "jenis": "Modul Ajar", "tahun": 2025, "ringkasan": "Modul Kurikulum Merdeka fase E, lengkap dengan asesmen diagnostik, LKPD, dan rubrik proyek."},
+    {"judul": "Simulasi Interaktif Pembelahan Sel Mitosis dan Meiosis", "jenis": "Media Pembelajaran", "tahun": 2024, "ringkasan": "Media berbasis presentasi interaktif yang membantu siswa membedakan tahapan mitosis dan meiosis."},
+    {"judul": "Asesmen Formatif Berdiferensiasi pada Materi Genetika", "jenis": "Artikel Jurnal", "tahun": 2024, "ringkasan": "Artikel di jurnal pendidikan sains tentang tiga jalur asesmen formatif sesuai kesiapan belajar siswa."},
+    {"judul": "Biologi Itu Dekat: Kumpulan Praktikum dengan Bahan Sehari-hari", "jenis": "Buku", "tahun": 2023, "ringkasan": "Buku 120 halaman berisi 24 praktikum murah meriah untuk sekolah yang laboratoriumnya terbatas."},
+    {"judul": "Kebun Sekolah sebagai Laboratorium Hidup", "jenis": "Best Practice", "tahun": 2023, "ringkasan": "Praktik baik mengubah lahan kosong sekolah menjadi sumber belajar ekosistem, gizi, dan kewirausahaan."},
+    {"judul": "Efektivitas Video Pendek terhadap Pemahaman Konsep Sistem Peredaran Darah", "jenis": "Penelitian Tindakan Kelas", "tahun": 2022, "ringkasan": "Video berdurasi 3 menit buatan siswa terbukti meningkatkan pemahaman konsep dan keterlibatan belajar."}
+  ],
+  "bahan_ajar": [
+    {"judul": "Ringkasan Materi Sel dan Organel", "kelas": "XI", "mapel": "Biologi", "deskripsi": "Rangkuman 6 halaman dengan peta konsep dan latihan soal."},
+    {"judul": "LKPD Praktikum Uji Makanan", "kelas": "XI", "mapel": "Biologi", "deskripsi": "Lembar kerja uji amilum, protein, dan lemak memakai bahan dapur.", "video": "https://youtube.com/"},
+    {"judul": "Bahan Tayang Ekosistem dan Rantai Makanan", "kelas": "X", "mapel": "Biologi", "deskripsi": "Slide presentasi bergambar untuk pertemuan 1 sampai 3."},
+    {"judul": "Latihan Soal Keanekaragaman Hayati", "kelas": "X", "mapel": "Biologi", "deskripsi": "30 soal pilihan ganda dan 5 soal uraian beserta pembahasan."},
+    {"judul": "Panduan Proyek Pengelolaan Sampah Kelas", "kelas": "X", "mapel": "Projek P5", "deskripsi": "Panduan langkah demi langkah proyek tema Gaya Hidup Berkelanjutan."},
+    {"judul": "Ringkasan Pewarisan Sifat dan Hukum Mendel", "kelas": "XII", "mapel": "Biologi", "deskripsi": "Materi dengan contoh persilangan dan diagram Punnett.", "video": "https://youtube.com/"},
+    {"judul": "Kisi-kisi Penilaian Akhir Semester Ganjil", "kelas": "XII", "mapel": "Biologi", "deskripsi": "Kisi-kisi dan contoh soal untuk persiapan ujian."}
+  ],
+  "artikel": [
+    {"judul": "Lima Cara Membuat Siswa Berani Bertanya di Kelas", "kategori": "Tips Mengajar", "ringkasan": "Pertanyaan siswa adalah tanda kelas yang hidup. Ini lima kebiasaan kecil yang saya terapkan setiap hari."},
+    {"judul": "Refleksi Setahun Menerapkan Pembelajaran Berdiferensiasi", "kategori": "Refleksi", "ringkasan": "Apa yang berhasil, apa yang gagal, dan apa yang akan saya ubah tahun depan."},
+    {"judul": "Praktikum Murah Meriah: Uji Makanan dengan Bahan Dapur", "kategori": "Praktikum", "ringkasan": "Tidak punya reagen lengkap? Siswa tetap bisa praktikum uji makanan dengan bahan yang ada di dapur."},
+    {"judul": "Cerita dari Kebun Sekolah: Ketika Siswa Menjadi Peneliti", "kategori": "Kegiatan Kelas", "ringkasan": "Catatan proyek satu semester siswa kelas X mengamati serangga penyerbuk di kebun sekolah."}
+  ],
+  "prestasi": [
+    {"judul": "Guru Berprestasi Jenjang SMA", "kategori": "guru", "tingkat": "Provinsi", "peringkat": "Juara 2", "tahun": 2025, "deskripsi": "Lomba Guru Berprestasi dan Berdedikasi tingkat provinsi."},
+    {"judul": "Lomba Karya Tulis Ilmiah Remaja", "kategori": "siswa", "tingkat": "Nasional", "peringkat": "Medali Perak", "tahun": 2025, "deskripsi": "Membimbing tim KIR dengan penelitian bioindikator kualitas air sungai."},
+    {"judul": "Inovasi Pembelajaran Guru Sains", "kategori": "guru", "tingkat": "Nasional", "peringkat": "Finalis", "tahun": 2024, "deskripsi": "Media simulasi pembelahan sel masuk 10 besar nasional."},
+    {"judul": "Olimpiade Sains Biologi", "kategori": "siswa", "tingkat": "Kabupaten/Kota", "peringkat": "Juara 1", "tahun": 2024, "deskripsi": "Pembimbing siswa kelas XI yang kemudian lolos ke tingkat provinsi."},
+    {"judul": "Guru Penggerak Angkatan 7", "kategori": "guru", "tingkat": "Nasional", "peringkat": "Lulus", "tahun": 2023, "deskripsi": "Menyelesaikan Program Pendidikan Guru Penggerak selama 6 bulan."},
+    {"judul": "Lomba Poster Lingkungan Hidup", "kategori": "siswa", "tingkat": "Provinsi", "peringkat": "Juara 3", "tahun": 2023, "deskripsi": "Pembimbing siswa dalam lomba poster Hari Lingkungan Hidup."}
+  ],
+  "galeri": [
+    {"judul": "Praktikum mikroskop sel bawang", "album": "Kegiatan Kelas"}, {"judul": "Pengamatan serangga di kebun sekolah", "album": "Studi Lapangan"},
+    {"judul": "Presentasi proyek ekosistem", "album": "Kegiatan Kelas"}, {"judul": "Uji makanan dengan bahan dapur", "album": "Kegiatan Kelas"},
+    {"judul": "Tim KIR di final LKTI nasional", "album": "Lomba"}, {"judul": "Panen sayur kebun sekolah", "album": "Studi Lapangan"},
+    {"judul": "Pameran karya P5", "album": "Kegiatan Kelas"}, {"judul": "Sampling air sungai", "album": "Studi Lapangan"}
+  ]
+}
